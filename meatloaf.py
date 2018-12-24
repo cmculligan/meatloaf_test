@@ -33,9 +33,17 @@ print ('2) I won\'t \n \n')
 
 selection2 = input(question2)
 
+# Also could be:
+# while (selection2) != '1' and (selection2) != '2':
+# while (selection2 not in ('1', '2')):
+
+while not (selection2 == '1' or selection2 == '2'):
+	print ('Seriously tho you do have to actually enter a 1 or a 2 \n')
+	selection2 = input(question2)
 if (selection2) == '1':
-	print ('\n \n\n You are Hall and Oats!')
-else:
-	print ('\n \n \n You are Meatloaf!')
+		print ('\n \n\n You are Hall and Oats!')
+elif (selection2) == '2':
+		print ('\n \n \n You are Meatloaf!')
 	
 print ('\n\n')
+exit()
