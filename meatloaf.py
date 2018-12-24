@@ -16,11 +16,13 @@
 question1 = 'Would you do anything for love? >> '
 question2 = 'But what about \"that\"? >> '
 
-print ('\n \n')
-print ('Welcome to the \"Are you Meatloaf Test\"')
-print ('Choose wisely')
+print ('\n\nWelcome to the \"Are you Meatloaf Test\" \n\nChoose wisely\n')
 		
+# Set selection1 variable to the input received for question1 "PRINT THE QUESTION"
+
 selection1 = input(question1)
+
+# Evaluate the input, is it either "yes" or "y", if so they are Meatloaf.  If input is neither than they are Hall and Oats
 
 if (selection1 == 'yes' or selection1 == 'y'):
 	print ('\n \n So far you are Meatloaf!')
@@ -28,14 +30,17 @@ else:
 	print ('\n \n So far you are Hall and Oats')
 
 print ('\n \n')
-print ('1) I can\'t go for that, no can do')
-print ('2) I won\'t \n \n')
+
+# Ask the second question and print options for user to choose, set variable selection2 to user input
+
+print ('1) I can\'t go for that, no can do \n2) I won\'t \n \n')
 
 selection2 = input(question2)
 
-# Also could be:
+# Line 44 could also could be expressed as:
 # while (selection2) != '1' and (selection2) != '2':
 # while (selection2 not in ('1', '2')):
+# Run while loop until user inputs a valid option, in this case '1' or '2' 
 
 while not (selection2 == '1' or selection2 == '2'):
 	print ('Seriously tho you do have to actually enter a 1 or a 2 \n')
@@ -46,4 +51,6 @@ elif (selection2) == '2':
 		print ('\n \n \n You are Meatloaf!')
 	
 print ('\n\n')
+
+# Is exit() even necessary?
 exit()
