@@ -14,7 +14,7 @@
 '''
 
 question1 = 'Would you do anything for love? >> '
-question2 = 'But what about \"that\"? >>'
+question2 = 'But what about \"that\"? >> '
 
 print ('\n \n')
 print ('Welcome to the \"Are you Meatloaf Test\"')
@@ -22,16 +22,14 @@ print ('Choose wisely')
 		
 selection1 = input(question1)
 
-if (selection1 == 'yes'):
+if (selection1 == 'yes' or selection1 == 'y'):
 	print ('\n \n So far you are Meatloaf!')
-	print (question2)
 else:
 	print ('\n \n So far you are Hall and Oats')
-	print (question2)
 
 print ('\n \n')
 print ('1) I can\'t go for that, no can do')
-print ('2) I won\'t')
+print ('2) I won\'t \n \n')
 
 selection2 = input(question2)
 
@@ -40,5 +38,4 @@ if (selection2) == '1':
 else:
 	print ('\n \n \n You are Meatloaf!')
 	
-print ('\n')
-exit()
+print ('\n\n')
