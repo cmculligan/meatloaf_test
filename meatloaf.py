@@ -24,25 +24,26 @@ selection1 = input(question1)
 
 # Evaluate the input, is it either "yes" or "y", if so they are Meatloaf.  If input is neither than they are Hall and Oats
 
-if (selection1 == 'yes' or selection1 == 'y'):
-	print ('\n \n So far you are Meatloaf!')
-else:
-	print ('\n \n So far you are Hall and Oats')
+# My first run:  if (selection1 == 'yes' or selection1 == 'y'):
+# Changed to:
 
-print ('\n \n')
+if (selection1 in ('yes', 'y')):
+	print ('\n \n So far you are Meatloaf!\n\n')
+else:
+	print ('\n \n So far you are Hall and Oats\n\n')
 
 # Ask the second question and print options for user to choose, set variable selection2 to user input
 
-print ('1) I can\'t go for that, no can do \n2) I won\'t \n \n')
+print ('1) I can\'t go for that, no can do \n2) I won\'t\n\n')
 
 selection2 = input(question2)
 
 # Line 44 could also could be expressed as:
 # while (selection2) != '1' and (selection2) != '2':
-# while (selection2 not in ('1', '2')):
+# while not (selection2 == '1' or selection2 == '2'):
 # Run while loop until user inputs a valid option, in this case '1' or '2' 
 
-while not (selection2 == '1' or selection2 == '2'):
+while (selection2 not in ('1', '2')):
 	print ('Seriously tho you do have to actually enter a 1 or a 2 \n')
 	selection2 = input(question2)
 if (selection2) == '1':
